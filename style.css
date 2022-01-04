@@ -1,0 +1,883 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#preloader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white url("images/spinning-loading.gif") no-repeat center;
+    background-size: 25% 30%;
+    z-index: 9999;
+}
+.cont{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    animation:animate 8s linear infinite;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.6);
+    
+}
+
+@keyframes animate {
+    0%,100%{background-image: url("images/nature-3082832__480.jpg");}
+    
+    50%{background-image: url("images/685208.jpg");}
+       
+}
+.logo{
+    float: left;
+    color:rgb(14, 154, 235);
+    margin:10px;
+    
+}
+.logo h2{
+    font-weight: bold;
+}
+.menubar{
+    float: right;
+}
+.menubar ul{
+    display: flex;
+}
+.menubar ul li {
+    padding:10px 15px;
+    margin:5px;
+    list-style-type: none;
+    font-weight: bold;
+    transition: all 0.3s !important;
+    
+}
+.mobileicon{
+    float: right;
+    font-size: 28px;
+    margin-top: 10px;
+    display: none;
+}
+.nav-items.active{
+    background-color: rgb(14, 154, 235);
+    border-radius: 20px 20px 0 20px;
+}
+.menubar ul li:hover{
+    background-color: rgb(14, 154, 235);
+    border-radius: 20px 20px 0 20px;
+    transform: translateY(2px);
+}
+.menubar ul li a{
+    color:rgb(221, 27, 124);
+    text-decoration: none;
+    
+}
+.middleText{
+    text-align: center;
+    color: white !important;
+    z-index: 999;
+}
+.middleText .Head h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.middleText .Head p{
+    font-size: 25px
+}
+#effect{
+    animation: TextEffect 3s linear infinite;
+    transition: 2s all;
+    font-weight: bold;
+}
+@keyframes TextEffect {
+    0%{color:blue;}
+    25%{color: blueviolet;}
+    50%{color: rgb(42, 165, 83);}
+    100%{color:crimson}
+}
+.middleText .buttn{
+    text-align: center;
+    
+}
+.middleText .buttn button{
+    padding:12px 20px;
+    border:none;
+    background-color: rgb(14, 154, 235);
+    color:white;
+    border-radius: 30px;
+    margin:10px;
+    box-shadow: 0 10px 15px  rgba(245, 64, 64, 0.685);
+    text-decoration: none;
+    border:none;
+    transition: all 0.4s !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+.middleText .buttn button:hover{
+    color:black;
+    color:rgb(14, 154, 235);
+    background-color: white;
+    box-shadow: 0 10px 15px  rgb(14, 154, 235);
+    transform: translateY(3px);
+}
+.aboutUs{
+    width:100%;
+    height: 105vh;
+    font-weight: bold;
+}
+.about{
+    width:100%;
+    height: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding:80px 0 50px 0;
+}
+.innerrow{
+    display: flex;
+}
+.innerrow .icon i{
+    color: white;
+    border-radius: 10px;
+    width:50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(14, 154, 235);
+    margin:5px 0px ;
+    font-size: 30px;
+    transition: all 0.4s;
+}
+.innerrow .icon-right{
+    margin:0 10px;
+    text-align: justify;
+}
+.innerrow .icon-right h4{
+    font-weight: bold;
+}
+.innerrow:hover > .icon i{
+    transform: scale(1.2);
+}
+.skill{
+    font-size: 25px;
+    text-align: center;
+    margin:50px 0 25px 0;
+}
+.skillcontant{
+    margin:20px 0;
+}
+.prog{
+    box-shadow: 2px 5px 10px black;
+}
+
+.services{
+    width:100%;
+    height: 100vh;
+    font-weight: bold;
+    background-color: rgb(243, 238, 238);
+}
+
+.serviceheader{
+    width:100%;
+    height: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding:80px 0 50px 0;
+}
+.innerservice{
+    width:100%;
+    height: auto;
+    background-color: white;
+    padding:25px;
+    border-radius: 50px 50px 0 50px;
+    transition: 0.4s all;
+    position: relative;
+    transition: 0.4s all !important;
+    overflow: hidden;
+}
+
+.innerservice p{
+    width:auto;
+    color:rgb(138, 120, 120);
+}
+.innerservice .icn i{
+    width:30px ;
+    height: 30px;
+    font-size: 45px;
+    margin-bottom: 30px;
+    
+}
+.icn-head h4{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.innerservice:hover{
+    background-color: rgb(14, 154, 235);
+    color:white;
+    box-shadow: 0 5px 15px black;
+    
+}
+
+.innerservice:hover p{
+    color:white;
+}
+.innerservice::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width:0;
+    height: 0;
+    border-radius: 50px 50px 0 0;
+    transition: 0.4s linear;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+.innerservice::before .icn i{
+    color: white;
+}
+.innerservice:hover::before{
+    opacity: 1;
+    width:100%;
+    height: 33%;
+    color:white;
+    z-index: -1;
+}
+/* portfolio start */
+.portfolio{
+    width:100%;
+    height: 150vh;
+    background-color: rgb(243, 238, 238);
+}
+
+.Portfolio-head{
+    width:100%;
+    height: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding:80px 0 50px 0;
+    font-weight: bold;
+}
+.gallary-filter{
+    width:100%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.gallary-filter .filter-item{
+    background: white;
+    margin: 0 15px;
+    padding:15px 30px;
+    border-radius: 30px 30px 0 30px;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.gallary-filter .filter-item.active{
+    background: rgb(14, 154, 235);
+    color:white;
+}
+.filter-item:hover{
+    background-color: rgb(14, 154, 235);
+    color:blue;
+}
+.portfolio .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gallary-item{
+    width:calc(100% / 3);
+}
+.gallary-item-inner img{
+    width:90%;
+    height: 100%;
+    margin-bottom: 20px;
+    border-radius: 120px 120px 0 120px;
+    cursor: pointer;
+    transition: 0.4s all;
+    position: relative;
+}
+
+/* img-cont */
+.gallary-item-inner .img_cont{
+    position: absolute;
+    top:0;
+    left:0;
+    width:90%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 120px 120px 0 120px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.gallary-item-inner .img_cont span{
+    margin-top: 250px;
+    transition: all 0.4s linear;
+}
+.gallary-item-inner .img_cont span i{
+    font-size: 50px;
+}
+.gallary-item-inner .img_cont:hover{
+    opacity: 1;
+}
+.gallary-item-inner .img_cont:hover span{
+    margin-top: 0px;
+}
+/* img cont end */
+/* portfolio end */
+
+.team{
+    width:100%;
+    height: 100vh;
+    font-weight: bold;
+   
+}
+.team-head{
+    width:100%;
+    height: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding:80px 0 50px 0;
+}
+.inner-team-row{
+    width:100%;
+    height: 100%;
+    text-align: center;
+    margin:15px 0;
+}
+.inner-team-row h5{
+    text-align: center;
+    font-weight: bold;
+    margin:30px 0;
+    color:rgb(14, 154, 235);
+}
+.inner-team-row img{
+    width:100%;
+    height: 60%;
+    border-radius:120px 120px 0 120px;
+    border-bottom: 7px solid rgb(14, 154, 235);
+    transition: 0.4s all;
+}
+.inner-team-row p{
+    text-align: center;
+    font-size: 16px;
+    color:rgb(14, 154, 235);
+}
+.iconbar{
+    font-size: 30px;
+    text-align: center;
+    transition: 0.4s all;
+    color:rgb(14, 154, 235);
+}
+.iconbar i{
+    margin:7px;
+    cursor: pointer;
+}
+.inner-team-row:hover > img{
+    border-radius:0px 120px 0 120px;
+    box-shadow: 0 10px 10px  black;
+}
+.inner-team-row:hover >.iconbar{
+    color:black;
+}
+/* blog start */
+.blog{
+    width:100%;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.blog-head{
+    text-align: center;
+    font-size: 35px;
+    padding:80px 0 50px 0;
+    font-weight: bold;
+}
+.card{
+    width:calc(100% /3);
+    height: 270px;
+    border-radius: 15px ;
+    text-align: left;
+    padding: 0 20px;
+    margin:70px 20px;
+    transition: all 0.5s !important;
+}
+.card:hover{
+    height: 450px;
+    cursor: pointer;
+    transform: translateY(-100px);
+}
+
+.card .imgbox {
+    text-align: center;
+}
+.card .imgbox img{
+    width:90%;
+    height: 220px;
+    transform: translateY(-50px);
+    box-shadow: 0px 10px 20px black;
+    border-radius: 50px 50px 0 50px;
+}
+
+.blog-write{
+    width:100%;
+    transform: translateY(-250px);
+}
+.card:hover > .imgcontent{
+    transform: translateY(230px);
+    opacity: 1;
+}
+.blog-write span{
+    font-weight: bold;
+}
+.imgcontent{
+    margin:0px 17px 20px 17px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.cont-blog{
+    display: flex;
+}
+/* blog end */
+/* contact start */
+.contact{
+    width:100%;
+    height: 100vh;
+    padding:120px  0 0 0;
+}
+.contact-inner{
+    width:100%;
+    height: 100%;
+    background-image: url("images/white-abstract-wallpaper_23-2148830027.jpg");
+    background-size: cover;
+    padding: 50px 200px;
+}
+.contact-head{
+    text-align: center;
+    font-size: 35px;
+    transform: translateY(-80px) !important;
+    font-weight: bold;
+}
+.contact-form{
+    width:100%;
+    height: 450px;
+    background:rgba(238, 236, 231, 0.651);
+    text-align: center;
+}
+.contact-form .row{
+    height: 100%;
+    
+}
+.contact-col .form-group{
+    margin:30px 20px;
+    box-shadow: 0 10px 20px black;
+}
+.contact-col .form-group .form-control{
+    padding: 30px 15px;
+    font-size: 20px;
+}
+.form-group:hover .form-control{
+    border-radius: 100px;
+}
+.contact-btn .btn{
+    background:#fff;
+    padding:15px 20px;
+    border-radius: 50px;
+    background-color:rgb(14, 154, 235) ;
+    font-weight: bold;
+    box-shadow: 0 10px 20px black;
+    transition: all 0.5s;
+}
+.contact-btn .btn:hover {
+    transform:translateY(10px);
+    background-color: white;
+    color: rgb(14, 154, 235);
+    box-shadow: 0 10px 20px rgb(14, 154, 235);
+}
+.last-div{
+    width:100%;
+    height: 50vh;
+    background-color: rgb(14, 154, 235);
+}
+.last-div .row{
+    width:100%;
+    padding: 30px 30px;
+    color: white;
+}
+.last-div .row h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.last-div .row  ul{
+    list-style-type: none;
+}
+.last-div .row  ul li{
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding-left: 15px;
+    transition: 0.5s all;
+    color: rgb(228, 218, 218);
+}
+.last-div .row  ul li:hover{
+    color:black;
+    box-shadow: 0 10px 15px black;
+    border-radius:15px;
+}
+/* contact end */
+.copy-right{
+    width:100%;
+    text-align: center;
+    background-color: violet;
+}
+.copy-right p{
+    padding:10px 0;
+    font-weight: bold;
+}
+/* responsive queries */
+@media only screen and (max-width:1180px){
+    .skillcontant{
+        margin:15px 0;
+    }
+    .cont .outer .container .menubar ul li{
+        padding: 10px;
+        margin: 11px 5px;
+    }
+    .cont .outer .content{
+        width:100%;
+    }
+    .cont .outer .container .menubar ul{
+        height: 65px;
+    }
+    .contactus{
+        transform: translateY(-80px) !important;
+    }
+    .menubar ul {
+        margin:0;
+    }
+    .middleText .Head h1{
+        font-size: 40px;
+    }
+    .middleText .Head p{
+        font-size: 20px;
+    }
+    .middleText .buttn button{
+        padding:8px 15px;
+        font-size: 16px;
+    }
+    .card{
+        font-size: 14px;
+    }
+    .card:hover{
+        height: 450px;
+        font-size: 14px;
+    }
+    .imgcontent{
+        margin:0px 10px 10px 10px;
+    }
+    .contact-btn .btn{
+        padding:8px 15px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:998px)
+{
+    .menubar{
+        font-size: 14px;
+    }
+    .logo h2{
+        font-size: 28px;
+    }
+    .aboutUs .container .row .col .innerrow .icon-right h4{
+        font-size: 24px;
+    }
+    .cont .outer .content{
+        height: 65px;
+    }
+    .cont .outer .container .menubar ul li{
+        padding: 10px;
+        margin: 15px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .cont .outer .container .menubar ul{
+        height: 65px;
+    }
+    .innerservice:hover::before{
+        height: 30%;
+    }
+    
+}
+@media only screen and (max-width:992px){
+    .cont .outer .container .menubar ul{
+        display: none;
+    }
+    .mobileicon{
+        display: block;
+    }
+    .cont .outer .container .menubar ul li{
+        padding: 5px 5px;
+        margin: 5px;
+    }
+    .cont .outer .container .menubar{
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    .middleText .Head h1{
+        font-size: 30px;
+    }
+    .middleText .Head p{
+        font-size: 18px;
+    }
+    .middleText .buttn button{
+        padding:8px 15px;
+        font-size: 14px;
+    }
+    .services{
+        width:100%;
+        height: 140vh;
+    }
+    .gallary-filter .filter-item {
+        background: white;
+        margin: 0 5px;
+        padding: 15px 25px;
+    }
+    .portfolio{
+        height: 110vh;
+    }
+    .inner-team-row img {
+        width: 70%;
+    }
+    .team {
+        width: 100%;
+        height: 150vh;
+    }
+    .card{
+        margin:70px 7px;
+    }
+    .card .imgbox img {
+        width: 90%;
+        height: 180px;
+    }
+    .imgcontent{
+        font-size: 14px;
+    }
+    .innerrow .icon-right h4{
+        font-size: 23px;
+    }
+    .icon-right p{
+        font-size: 16px;
+    }
+    .innerrow{
+        margin-top: 15px;
+    }
+    .aboutUs{
+        height: 110vh;
+    }
+    .innerservice .icn i{
+        font-size: 30px;
+    }
+    .innerservice .icn-head h4{
+        font-size: 20px;
+    }
+    .gallary-filter .filter-item {
+        background: white;
+        margin: 0 3px;
+        padding: 10px 20px;
+    }
+    .contact-col .form-group .form-control {
+        padding: 22px 12px;
+        font-size: 14px;
+    }
+    .contact .contact-inner form .contact-form .row .contact-btn .btn{
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    .last-div{
+        height: 630px;
+    }
+    .copy-right p {
+        font-size: 14px;
+    }
+    .about,.serviceheader,.Portfolio-head,.team-head,.blog-head,.contact-head{
+        font-size: 28px;
+    }
+    
+}
+@media only screen and (max-width:768px) {
+    .innerrow .icon-right h4 {
+        font-size: 20px;
+    }
+    .innerrow .icon-right p{
+        font-size: 15px;
+    }
+    .innerrow .icon i{
+        font-size: 25px;
+    }
+    .aboutUs{
+        height: 155vh;
+    }
+    .innerservice{
+        height: 230px;
+    }
+    .innerservice .icn{
+        height: 40px;
+    }
+    .innerservice .icn-head p{
+        font-size:15px ;
+    }
+    .services{
+        height: 130vh;
+    }
+    .portfolio .container .row .gallary-filter .filter-item{
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+    .card .imgbox img{
+        width: 120px;
+        height: 160px;
+    }
+    .card{
+        height: 200px;
+    }
+    .card .imgcontent p{
+        font-size: 12px;
+    }
+    .contact-inner {
+        width: 100%;
+        height: 120%;
+    }
+    .last-div{
+        margin-top: 110px;
+    }
+    .contact-form .row .contact-btn .btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+    .last-col h3{
+        font-size: 24px;
+    }
+    .gallary-item-inner .img_cont span i{
+        font-size: 30px !important;
+    }
+    .innerservice:hover::before{
+        height: 27%;
+    }
+}
+@media only screen and (max-width:480px){
+    .cont .middleText .Head h1 {
+        font-size: 25px;
+    }
+    .middleText .buttn button {
+        padding: 8px 15px;
+        font-size: 12px;
+        margin:0 5px;
+    }
+    .innerrow .icon-right h4 {
+        font-size: 18px;
+    }
+    .innerrow .icon-right p {
+        font-size: 14px;
+    }
+    .innerrow{
+        margin:0 25px;
+    }
+    .innerrow .icon i {
+        width:40px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+    .innerservice{
+        width:100px;
+    }
+    .innerservice p {
+        margin:0;
+    }
+    .services{
+        height:140%;
+    }
+    .gallary-filter .filter-item {
+        font-size: 10px !important;
+        padding: 10px 40px ;
+        margin:0 ;
+    }
+    
+    .portfolio .container .row .gallary-filter .filter-item{
+        font-size: 14px;
+        padding: 8px 2px;
+    }
+    .portfolio {
+        height: 80vh;
+    }
+    .team{
+        height: 330vh;
+    }
+    .blog .container {
+        display: block;
+    }
+    .blog .container .card{
+        width:350px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .card .imgbox img {
+        width: 300px;
+        height: 200px;
+    }
+    .card:hover {
+        height: 350px;
+    }
+    .blog{
+        height: 180vh;
+    }
+    
+    .contact-form{
+        width:300px;
+        margin:0;
+    }
+    .contact-inner{
+        padding: 50px;
+    }
+    .last-div .row h3 {
+        font-size: 22px;
+    }
+    .last-div .row p{
+        font-size: 18px;
+    }
+    .last-div{
+        height: 170vh;
+    }
+    .contact-inner{
+        height:130% !important;
+    }
+    .contact{
+        height:130%;
+    }
+}
+@media only screen and (max-width:400px){
+    .team{
+        height: 300vh;
+    }
+}

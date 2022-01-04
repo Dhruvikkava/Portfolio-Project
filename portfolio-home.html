@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.1/jquery.smooth-scroll.min.js"></script>
+    <!-- animate aos link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+</head>
+<body onload="myFun()" data-bs-spy="scroll" data-bs-target=".outer" data-target=".menubar">
+    <div id="preloader"></div>
+    <section id="first">
+    <div class="cont ">
+        <div class="outer">
+            <div class="content" style="width:100%;height:65px;position:fixed;z-index: 99999;background-color: black;">
+            <div class="container">
+                <div class="logo">
+                    <h2>Tatvasoft</h2>
+                </div>
+                <div class="menubar ">
+                    <ul  id="check-class">
+                        <li class="nav-items active"><a href="#first">Home</a></li>
+                        <li class="nav-items"><a href="#second">About Us</a></li>
+                        <li class="nav-items"><a href="#third">Services</a></li>
+                        <li class="nav-items"><a href="#forth">Portfolio</a></li>
+                        <li class="nav-items"><a href="#fifth">Our Team</a></li>
+                        <li class="nav-items"><a href="#sixth">Blog</a></li>
+                        <li class="nav-items"><a href="#seventh">Contact Us</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="mobileicon" onclick="slideshow()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            
+            </div>
+        </div>
+     
+        <div class="middleText " data-aos="fade-down">
+            <div class="Head">
+                <h1>Welcome To Our First Website</h1>
+                <p>We Must Work At <span id="effect"> WEB DESIGN</span> </p>
+            </div>
+            <div class="buttn" data-aos="zoom-in">
+                <button>Get Started</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="second">
+    <div class="aboutUs" >
+        
+        <div class="container">
+            <div class="about" data-aos="zoom-in">ABOUT US</div>
+            <div class="row my-3">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 " data-aos="fade-right">
+                    <div class="innerrow">
+                        <div class="icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="icon-right">
+                            <h4>Who We Are?</h4>
+                            <p>Lorem ipsum dolor sit elit. Incidunt sapiente rem doloremque? Atque libero volupta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 " data-aos="fade-right">
+                    <div class="innerrow">
+                        <div class="icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="icon-right">
+                            <h4>What We Do?</h4>
+                            <p>Lorem ipsum dolor sit elit. Incidunt sapiente rem doloremque? Atque libero volupta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3" data-aos="fade-left">
+                    <div class="innerrow">
+                        <div class="icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="icon-right">
+                            <h4>Why We Do It?</h4>
+                            <p>Lorem ipsum dolor sit elit. Incidunt sapiente rem doloremque? Atque libero volupta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3" data-aos="fade-left">
+                    <div class="innerrow">
+                        <div class="icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="icon-right">
+                            <h4>Since When?</h4>
+                            <p>Lorem ipsum dolor sit elit. Incidunt sapiente rem doloremque? Atque libero volupta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill" data-aos="zoom-in">Our Skills</div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 col-sm-12 skillcontant"data-aos="flip-down">
+                    <p>Html/Css</p>
+                    <div class="progress" style="box-shadow: 0px 10px 15px black;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%"></div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-sm-12 skillcontant"data-aos="flip-down">
+                    <p>Javascript</p>
+                    <div class="progress" style="box-shadow: 0px 10px 15px black;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%"></div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-sm-12 skillcontant"data-aos="flip-down">
+                    <p>Bootstrap</p>
+                    <div class="progress" style="box-shadow: 0px 10px 15px black;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:75%"></div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-sm-12 skillcontant"data-aos="flip-down">
+                    <p>Jquery</p>
+                    <div class="progress" style="box-shadow: 0px 10px 15px black;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="services" id="third">
+        <div class="container">
+            <div class="serviceheader"data-aos="zoom-in">Services</div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-sm-6 innerservice"data-aos="zoom-in-right">
+                    <div class="icn">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="icn-head">
+                        <h4>Web Development</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-sm-6 innerservice"data-aos="zoom-in">
+                    <div class="icn">
+                        <i class="fas fa-laptop-medical"></i>
+                    </div>
+                    <div class="icn-head">
+                        <h4>Responsive Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-sm-6 innerservice"data-aos="zoom-in-left">
+                    <div class="icn">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="icn-head">
+                        <h4>Creative Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-sm-6 innerservice"data-aos="zoom-in-right">
+                    <div class="icn">
+                        <i class="fas fa-comments-dollar"></i>
+                    </div>
+                    <div class="icn-head">
+                        <h4>Support</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-sm-6 innerservice"data-aos="zoom-in">
+                    <div class="icn">
+                        <i class="fas fa-disease"></i>
+                    </div>
+                    <div class="icn-head">
+                        <h4>Web Idea</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-sm-6 innerservice"data-aos="zoom-in-left">
+                    <div class="icn">
+                        <i class="fas fa-object-group"></i>
+                    </div>
+                    <div class="icn-head">
+                        <h4>Graphic Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio" id="forth">
+        <div class="container">
+            <div class="Portfolio-head"data-aos="zoom-in">Portfolio</div>
+            <div class="row">
+                <div class="gallary-filter" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <span class="filter-item active" data-filter="all">All</span>
+                    <span class="filter-item" data-filter="web-development">Web Development</span>
+                    <span class="filter-item" data-filter="creative-design">Creative Design</span>
+                    <span class="filter-item" data-filter="graphic-design">Graphic Design</span>
+                </div>
+            </div>
+            <div class="gallery" >
+            <div class="row ">
+                <div class="gallary-item one" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <a href="images/gallery_img-01.jpg" class="gallary-item-inner web-development ">
+                        <img src="images/gallery_img-01.jpg" alt="xyz">
+                        <p class="img_cont">
+                           <span><i class="far fa-plus-square"></i></span>
+                        </p>
+                    </a>
+                    
+                </div>
+                <div class="gallary-item six"data-aos="zoom-in">
+                    <a href="images/gallery_img-06.jpg" class="gallary-item-inner web-development">
+                        <img src="images/gallery_img-06.jpg" alt="xyz">
+                        <p class="img_cont">
+                           <span><i class="far fa-plus-square"></i></span>
+                        </p>
+                    </a>
+                </div>
+                <div class="gallary-item two"data-aos="flip-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <a href="images/gallery_img-02.jpg" class="gallary-item-inner creative-design">
+                        <img src="images/gallery_img-02.jpg" alt="xyz">
+                        <p class="img_cont">
+                            <span><i class="far fa-plus-square"></i></span>
+                         </p>
+                    </a>
+                </div>
+                <div class="gallary-item three"data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <a href="images/gallery_img-03.jpg" class="gallary-item-inner graphic-design">
+                        <img src="images/gallery_img-03.jpg" alt="xyz">
+                        <p class="img_cont">
+                            <span><i class="far fa-plus-square"></i></span>
+                         </p>
+                    </a>
+                </div>
+                <div class="gallary-item four"data-aos="zoom-in">
+                    <a href="images/gallery_img-04.jpg" class="gallary-item-inner creative-design">
+                        <img src="images/gallery_img-04.jpg" alt="xyz">
+                        <p class="img_cont">
+                            <span><i class="far fa-plus-square"></i></span>
+                         </p>
+                    </a>
+                </div>
+                <div class="gallary-item five"data-aos="flip-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <a href="images/gallery_img-05.jpg" class="gallary-item-inner graphic-design">
+                        <img src="images/gallery_img-05.jpg" alt="xyz">
+                        <p class="img_cont">
+                            <span><i class="far fa-plus-square"></i></span>
+                         </p>
+                    </a>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team" id="fifth">
+        <div class="container">
+            <div class="team-head" data-aos="zoom-in">Our Team</div>
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-6 col-sm-6 inner-team-row"data-aos="fade-up-right">
+                    <img src="images/img-1.jpg" alt="img-01">
+                    <h5>WILLIAMSAN</h5>
+                    <p>Web Designer</p>
+                    <div class="iconbar">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-google-plus"></i>
+                        <i class="fab fa-skype"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 col-sm-6 inner-team-row"data-aos="fade-up-right">
+                    <img src="images/img-2.jpg" alt="img-01">
+                    <h5>MIRANA ROY</h5>
+                    <p>Web Designer</p>
+                    <div class="iconbar">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-google-plus"></i>
+                        <i class="fab fa-skype"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 col-sm-6 inner-team-row"data-aos="fade-up-left">
+                    <img src="images/img-3.jpg" alt="img-01">
+                    <h5>STIVE THOMUS</h5>
+                    <p>Web Developer</p>
+                    <div class="iconbar">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-google-plus"></i>
+                        <i class="fab fa-skype"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 col-sm-6 inner-team-row"data-aos="fade-up-left">
+                    <img src="images/img-4.jpg" alt="img-01">
+                    <h5>KRISTANA</h5>
+                    <p>Web Developer</p>
+                    <div class="iconbar">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-google-plus"></i>
+                        <i class="fab fa-skype"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog" id="sixth">
+        <div class="blog-head"data-aos="zoom-in">OUR BLOG</div>
+            <div class="container cont-blog">
+                <div class="card" data-aos="flip-left">
+                    <div class="imgbox">
+                        <img src="images/istockphoto-1182641010-170667a.jpg" alt="">
+                    </div>
+                    <div class="imgcontent" >
+                        <p class="blog-write" style="font-weight: bold;">Quisque auctor lectus interdum nisl accum venenatis.</p>
+                        <p class="blog-write">by admin Apr 21, 2045 <span>Comments</span></p>
+                        <p class="blog-write">Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="flip-left">
+                    <div class="imgbox">
+                        <img src="images/istockphoto-1289323170-170667a.jpg" alt="">
+                    </div>
+                    <div class="imgcontent" >
+                        <p class="blog-write" style="font-weight: bold;">Quisque auctor lectus interdum nisl accum venenatis.</p>
+                        <p class="blog-write">by admin Apr 21, 2045 <span>Comments</span></p>
+                        <p class="blog-write">Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="flip-left">
+                    <div class="imgbox">
+                        <img src="images/photo-1471107340929-a87cd0f5b5f3.jpg" alt="">
+                    </div>
+                    <div class="imgcontent" >
+                        <p class="blog-write" style="font-weight: bold;">Quisque auctor lectus interdum nisl accum venenatis.</p>
+                        <p class="blog-write">by admin Apr 21, 2045 <span>Comments</span></p>
+                        <p class="blog-write">Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="contact" id="seventh">
+        <div class="contact-inner">
+            <div class="contact-head "data-aos="zoom-in">CONTACT </div>
+            <form>
+            <div class="contact-form">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 contact-col"data-aos="fade-right">
+                        <div class="form-group">
+                            <input type="name" class="form-control" placeholder="Enter name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter E-mail" id="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 contact-col"data-aos="fade-left">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="8" id="comment" placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 contact-btn">
+                        <button type="button" class="btn "data-aos="zoom-in">Send Message</button>
+                    </div>
+                </div>
+                    
+            </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="last-div" data-aos="zoom-in">
+        <div class="row">
+            <div class="col-12 col-lg-3 col-sm-6 col-md-6">
+                <h3>Recent Projects</h3>
+                <ul>
+                    <li>FillinRX</li>
+                    <li>WayPoint</li>
+                    <li>ONA Dating</li>
+                    <li>FreeWire</li>
+                    <li>CrayPay</li>
+                    <li>FoodSpaces</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-sm-6 col-md-6">
+                <h3>Technologies</h3>
+                <ul>
+                    <li>.Net</li>
+                    <li>Designing</li>
+                    <li>Data Science</li>
+                    <li>Flutter</li>
+                    <li>Angular JS</li>
+                    <li>Node JS</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-sm-6 col-md-6">
+                <h3>Software Outsourcing?</h3>
+                <ul>
+                    <li>Why India?</li>
+                    <li>Offshore Outsourcing</li>
+                    <li>Offshore Software Development</li>
+                    <li>Software Development India</li>
+                    <li>Do Testing?</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-sm-6 col-md-6">
+                <h3>Services</h3>
+                <ul>
+                    <li>Custom Software Development</li>
+                    <li>Web Development</li>
+                    <li>UI/Ux Designing</li>
+                    <li>Product Development</li>
+                    <li>Ecommerce</li>
+                    <li>Mobile Apps</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="copy-right">
+        <p >Copyright @2005-2006.Tatvasoft Software Company</p>
+    </div>
+<script>
+    function myFun(){
+        var spin = document.getElementById("preloader");
+        spin.style.display = "none";
+    }
+</script>
+<script src="js/script.js"></script>
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration:1000
+  });
+</script>
+
+<script>
+    function slideshow(){
+        var x = document.getElementById("check-class");
+        if(x.style.display === "none"){
+            x.style.display = "block";
+        }
+        else{
+            x.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
